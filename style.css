@@ -158,12 +158,12 @@ a.call-us{
 	display: grid;
 	grid-gap: 3rem;
 	}
-/* to create image float effect*/
+/* to create image float effect--no longer necessary with AAHA accreditation
 @media all and (min-width: 600px) {
 	#about>blockquote, #about>div.accreditation{
 		width: 50%;
 	}
-}
+} */
 @media all and (max-width:600px){
 	#about{
 		padding-bottom: 22rem;
