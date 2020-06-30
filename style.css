@@ -44,7 +44,7 @@ a{
 	color: var(--glencoeGreen);
 	transition-duration: 2s;
 }
-a:hover{
+a.phone:hover{
 	text-decoration: underline red;
 }
 a:hover .stars{
@@ -132,7 +132,7 @@ header{
 a.call-us{
 	padding: .2em .2em .3em .2em;
 	margin: .2em 0 .2em 0;
-
+	
 	background-color: var(--logoColor);
 	color: var(--offWhite);
 	
