@@ -140,7 +140,7 @@ a.call-us{
 }
 
 
-.about{
+#about{
 	grid-column: 3 / 4;
 	position: relative;
 	
@@ -155,18 +155,18 @@ a.call-us{
 	}
 /* to create image float effect*/
 @media all and (min-width: 600px) {
-	.about>blockquote, .about>div.accreditation{
+	#about>blockquote, #about>div.accreditation{
 		width: 50%;
 	}
 }
 @media all and (max-width:600px){
-	.about{
+	#about{
 		padding-bottom: 22rem;
 	}
 }
 
 
-.location{
+#location{
 	grid-column: 2 / 5;
 /* to align with above image */
 	margin-top: -10rem;
@@ -179,7 +179,7 @@ iframe{
 }
 
 
-.info{
+#info{
 	grid-column: 3 / 4;
 
 	display: grid;
@@ -191,26 +191,26 @@ iframe{
 
  /*business hours table grid*/
 @media all and (max-width: 600px){
-	.info{
+	#info{
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 }
-.info .business-hours{
+#info div.business-hours{
 	grid-ROW: span 2;
 	
 	display: grid;
 	grid-template-columns: minmax(100px, 150px) minmax(100px, 200px);
 }
- .info .business-hours h2{
+ #info div.business-hours h2{
 	grid-column: 1 / -1;
  }
 
-.info p{
+#info p{
 	white-space: nowrap;
 }
 
 
- .services{
+ #services{
 	grid-column: 2 / 5;
 
 	display: grid;
@@ -219,7 +219,7 @@ iframe{
 }
 /*to wrap evenly*/
 @media all and (max-width: 820px){
-	.services{
+	#services{
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 } 
@@ -237,7 +237,7 @@ iframe{
 	padding: .25rem 0 .25rem 0;
 }
 
-.reviews{
+#reviews{
 	grid-column: 2 / 5;
 	padding: 0 1rem 5rem 1rem;
 	
@@ -249,7 +249,7 @@ iframe{
 	grid-gap: 1rem;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-.reviews h2{
+#reviews h2{
 	grid-column: 1 / -1;
 }
 .review{
