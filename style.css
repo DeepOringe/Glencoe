@@ -117,14 +117,8 @@ header{
 	background-repeat: no-repeat;
 	min-height: 75vh;
 }
-@media all and (max-width: 800px) {
-	header{
-		grid-column: 2/5;
-		justify-content: space-around;
-	}
-} 
 
-header>div.nav{
+header div.nav{
 	background:linear-gradient(var(--offWhiteTrans) 95%, transparent);
 	padding: .5rem 5rem 1rem 5rem;
 
@@ -132,6 +126,16 @@ header>div.nav{
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+@media all and (max-width: 800px) {
+	header{
+		grid-column: 2/5;
+		justify-content: space-around;
+	}
+	header div.nav{
+		padding: .15rem;
+	}
+} 
 
 a.call-us{
 	padding: .2em .2em .3em .2em;
