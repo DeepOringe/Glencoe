@@ -78,50 +78,51 @@ p span{
 body{
 	display: grid;
 	grid-row-gap: 5rem;
-	grid-template-columns: 1fr 5rem minmax(auto, 1000px) 5rem 1.5fr;
+	grid-template-columns: 1fr 5rem minmax(auto, 1000px) 5rem 1fr;
+	grid-template-areas: 
 	grid-template-rows: auto;
 }
 @media all and (max-width: 800px) {
 	body{
-		grid-template-columns: 1fr 3rem minmax(auto, 1000px) 3rem 1.5fr;
+		grid-template-columns: 1fr 3rem minmax(auto, 1000px) 3rem 1fr;
 	}
 }
 @media all and (max-width 600px){
 	body{
-		grid-template-columns: 1fr 1rem minmax(auto, 1000px) 1rem 1.5fr;
+		grid-template-columns: 1fr 1rem minmax(auto, 1000px) 1rem 1fr;
 	}
 }
 
 
 /* BODY */
 header{
-	grid-area: 1 / 1 / 2 / -1;
-	display: flex;
-	flex-wrap: wrap;
-
-	height: 65vh;
-	min-height: 450px;
-	
-	padding: 1rem;
-	
-	background: linear-gradient(rgba(248,206,255,.8), transparent, transparent), url(images/glencoe-new2.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom center;
-
+	grid-column: 3/4;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 800px) {
 	header{
-		flex-direction: column;
-		justify-content: flex-start;
+		grid-column: 2/5;
+		justify-content: space-around;
 	}
+} 
+
+a.call-us{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 a.call-us h1{
-	color: var(--logoColor);
-	font-weight: 800;
+
+	padding: .2em .2em .3em .2em;
+	margin: .2em 0 .2em 0;
+	background-color: var(--logoColor);
+	color: var(--offWhite);
+	line-height: 1.3;
+	font-weight: 600;
 }
+
 
 .about{
 	grid-column: 3 / 4;
@@ -262,14 +263,16 @@ footer .cta{
 	padding: 2rem 1rem 5rem 1rem;
 }
 footer .credits{
-	background: var(--glencoeGreenDarkOpaque);
+	background: var(--logoColor);
 	padding: 3rem 1rem 4rem 1rem;
 }
 footer .credits small{
 	text-transform: uppercase;
 	font-size: .65em;
 }
-
+small.credits{
+	display: none;
+}
 
 
 
