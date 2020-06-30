@@ -44,6 +44,9 @@ a{
 	color: var(--glencoeGreen);
 	transition-duration: 2s;
 }
+a:hover{
+	text-decoration: underline red;
+}
 a:hover .stars{
 	transform: scale(1.75, 1.75);
 }
@@ -88,6 +91,8 @@ div.inline{
 	display: flex;
 	align-items: baseline;
 }
+
+
 	
 
 /* LAYOUT */
