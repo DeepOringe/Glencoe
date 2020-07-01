@@ -104,7 +104,6 @@ body{
 @media all and (max-width: 600px){
 	body{
 		grid-template-columns: 1fr 1rem minmax(auto, 1000px) 1rem 1fr;
-		grid-row-gap: 1rem;
 	}
 }
 
