@@ -116,7 +116,7 @@ header{
 	background-position: center bottom ;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 65vh;
+	min-height: 70vh;
 	max-height: 900px;
 }
 
@@ -151,8 +151,9 @@ a.call-us{
 	header{
 		grid-column: 2/5;
 		justify-content: space-around;
+
+		background-position: top right;
 	}
-	
 	img.logo{
 		height: 3rem;
 	}
@@ -184,7 +185,8 @@ a.call-us{
 } */
 @media all and (max-width:600px){
 	#about{
-		padding-bottom: 24rem;
+		margin-top: -2rem;
+		padding-bottom: 22rem;
 	}
 }
 
@@ -194,6 +196,12 @@ a.call-us{
 /* to align with above image */
 	margin-top: -10rem;
 }
+@media all and (max-width:600px){
+	#location{
+		margin-top: -8.5rem;
+	}
+}
+
 iframe{
 	width: 100%;
 	height: 450px;  
