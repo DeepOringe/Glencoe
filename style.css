@@ -98,7 +98,7 @@ body{
 @media all and (max-width: 800px) {
 	body{
 		grid-template-columns: 1fr 3rem minmax(auto, 1000px) 3rem 1fr;
-		/* grid-row-gap: 3rem; */
+		grid-row-gap: 3rem;
 	}
 }
 @media all and (max-width: 600px){
@@ -116,7 +116,7 @@ header{
 	background-position: center bottom ;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 60vh;
+	min-height: 65vh;
 	max-height: 900px;
 }
 
@@ -184,7 +184,7 @@ a.call-us{
 } */
 @media all and (max-width:600px){
 	#about{
-		padding-bottom: 22rem;
+		padding-bottom: 24rem;
 	}
 }
 
