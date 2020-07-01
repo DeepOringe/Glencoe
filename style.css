@@ -98,7 +98,7 @@ body{
 @media all and (max-width: 800px) {
 	body{
 		grid-template-columns: 1fr 3rem minmax(auto, 1000px) 3rem 1fr;
-		grid-row-gap: 3rem;
+		/* grid-row-gap: 3rem; */
 	}
 }
 @media all and (max-width: 600px){
